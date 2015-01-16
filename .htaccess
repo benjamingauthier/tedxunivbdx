@@ -1,0 +1,8 @@
+RewriteEngine On
+ErrorDocument 404 /404.html
+
+
+RewriteRule ^speaker$ speaker.php [L]
+RewriteRule ^conference$ conference.php [L]
+RewriteRule ^team$ team.php [L]
+RewriteRule ^sponsor$ sponsor.php [L]
