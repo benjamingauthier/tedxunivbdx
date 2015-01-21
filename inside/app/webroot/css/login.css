@@ -1,0 +1,17 @@
+body {
+    background: url(../img/background.jpg) no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+}
+
+.navbar {
+    background:rgba(52, 73, 94,0.6);   /* for latest browsers */
+
+}
+
+.navbar li { color: #ff6071
+}
+
+.container-fluid.flipthis-highlight {
+    padding-bottom: 20px;
+}
