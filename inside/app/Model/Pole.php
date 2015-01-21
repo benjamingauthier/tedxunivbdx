@@ -23,4 +23,25 @@ class Pole extends AppModel {
 			),
 		),
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+    public $hasMany = array(
+        'Member' => array(
+            'className' => 'Member',
+            'foreignKey' => 'pole_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        )
+    );
 }
