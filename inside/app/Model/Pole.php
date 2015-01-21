@@ -32,7 +32,7 @@ class Pole extends AppModel {
     public $hasMany = array(
         'Member' => array(
             'className' => 'Member',
-            'foreignKey' => 'pole_id',
+            'foreignKey' => 'poles_id',
             'dependent' => false,
             'conditions' => '',
             'fields' => '',
