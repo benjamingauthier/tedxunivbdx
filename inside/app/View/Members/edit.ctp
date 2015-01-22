@@ -1,5 +1,12 @@
 <div class="members form">
 <?php echo $this->Form->create('Member'); ?>
+	<?php echo $this->Form->create('Member', array(
+			'inputDefaults' => array(
+				'class' => 'form-control form-add'
+			),
+			'type' => 'file'
+		)
+	);; ?>
 	<fieldset>
 		<legend><?php echo __('Edit Member'); ?></legend>
 	<?php
@@ -7,7 +14,7 @@
 		echo $this->Form->input('firstname');
 		echo $this->Form->input('lastname');
 		echo $this->Form->input('ocupation');
-		echo $this->Form->input('picture');
+		echo $this->Form->file('img');
 		echo $this->Form->input('email');
 		echo $this->Form->input('phonenumber');
 		echo $this->Form->input('description');
@@ -15,7 +22,15 @@
 		echo $this->Form->input('website');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+	<br>
+	<?php echo $this->Form->end(array(
+		'label' => 'Submit',
+		'class' => 'btn btn-primary btn-connexion',
+		'div' => array(
+			'class' => 'btn-login btn-add btn-river'
+		)
+	));
+	?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

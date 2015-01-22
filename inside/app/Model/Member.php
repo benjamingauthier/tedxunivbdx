@@ -83,8 +83,8 @@ class Member extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Poles' => array(
-			'className' => 'Poles',
+		'Pole' => array(
+			'className' => 'Pole',
 			'foreignKey' => 'poles_id',
 			'conditions' => '',
 			'fields' => '',

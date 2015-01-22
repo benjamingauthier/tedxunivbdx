@@ -3,7 +3,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		Inside the TEDx !
+		Inside the TEDxUnivBdx !
 	</title>
 	<?php
 		echo $this->Html->meta('icon');

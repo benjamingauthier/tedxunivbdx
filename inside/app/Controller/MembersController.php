@@ -49,10 +49,10 @@ class MembersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Member->create();
 			if ($this->Member->save($this->request->data)) {
-				$this->Session->setFlash(__('The member has been saved.'));
+				$this->Session->setFlash(__('The member has been saved.'), 'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The member could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The member could not be saved. Please, try again.'), 'flash_fail');
 			}
 		}
 		$poles = $this->Member->Pole->find('list');
@@ -71,11 +71,14 @@ class MembersController extends AppController {
 			throw new NotFoundException(__('Invalid member'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+			$path=$this->request->data['Member']['img'];
 			if ($this->Member->save($this->request->data)) {
-				$this->Session->setFlash(__('The member has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				if (move_uploaded_file($this->request->data['Member']['img'], WWW_ROOT)) {
+				}
+				$this->Session->setFlash(__('The member has been saved.'), 'flash_success');
+				//return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The member could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The member could not be saved. Please, try again.'), 'flash_fail');
 			}
 		} else {
 			$options = array('conditions' => array('Member.' . $this->Member->primaryKey => $id));
