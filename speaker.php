@@ -2,7 +2,7 @@
     <section class="speaker-header">
         <div class="jumbotron speaker-jumbotron">
             <h1>10 <span class="red">speakers</span>, pour une mise en lumière</h1>
-            <p>Cette année ce sont dix speaker qui nous font l'honneur de participer à cette première édition du TEDx Université de Bordeaux. Ils apporteront chacun leur expertise sur le néthème de cetteédition : Lumière 2.0. Scientifique, entrepreuneur, professeur ou passionné, découvrez le parcours de chacun.</p>
+            <p>Cette année, ce sont dix speakers qui nous font l'honneur de participer à cette première édition du TEDx Université de Bordeaux. Ils apporteront chacun leur expertise sur le néthème de cette édition : Lumière 2.0. Scientifique, entrepreneur, professeur ou passionné, découvrez le parcours de chacun.</p>
         </div>
     </section><!-- simple -->
     <section class="speaker">
