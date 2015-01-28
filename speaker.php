@@ -7,18 +7,19 @@
     </section><!-- simple -->
     <section class="speaker">
         <div class="wrap">
-            <div class="row">
                 <?php $speakers= $dbh->query("Select lastname, firstname, description, picture From speakers");
                 foreach($speakers as $speaker) : ?>
+                    <div class="row">
                         <div class="col-md-4">
-                            <img class="img-thumbnail speaker-img" src="<?php echo $speaker['picture'] ?>">
+                            <img class="img-thumbnail speaker-img" src="/images/mathieu.jpg">
                         </div>
                         <div class="col-md-8">
-                            <h2 class="speaker-title"><?php echo $speaker['firstname'].' '.$speaker['lastname'].', '.$speaker['position'] ?></h2>
-                            <p class="speaker-descri"><?php echo utf8_encode($speaker['description']) ?></p>
+                            <h2 class="speaker-title"><span class="red">1/10</span> <?php echo $speaker['firstname'].' '.$speaker['lastname'].$speaker['position'] ?></h2>
+                            <p class="speaker-descri"><?php echo $speaker['description'] ?></p>
                         </div>
+                    </div>
                 <?php endforeach ?>
-            </div>
+           <br><br><br> <h3>Rendez-vous le <span class="red">01 Février</span> pour découvrir le prochain speaker !</h3>
         </div><!-- wrap -->
     </section><!-- simple -->
 <?php include('footer.php'); ?>
