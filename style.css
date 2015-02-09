@@ -684,6 +684,9 @@ footer .logo img {
     padding: 20px 0 20px;
 }
 
+img.img-thumbnail.speaker-img.img-center.partners-img.flipthis-highlight{
+    width: 50%;
+}
 .jumbotron.speaker-jumbotron {
     padding-left: 20px;
     padding-right: 20px;
@@ -717,7 +720,7 @@ footer .logo img {
 }
 
 .partners-img {
-    width: 120px;
+    width: 50%;
 }
 
 .frame {
@@ -728,7 +731,15 @@ footer .logo img {
     text-align: center; margin: 1em 0;
 }
 .partners-frame {
-    height: 170px;      /* equals max image height */
+     height: 170px;      /* equals max image height */
+     width: 1600px;
+     white-space: nowrap;
+
+     text-align: center; margin: 1em 0;
+ }
+
+.speakers-frame {
+    height: 200px;      /* equals max image height */
     width: 1600px;
     white-space: nowrap;
 

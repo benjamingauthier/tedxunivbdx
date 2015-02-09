@@ -2,7 +2,11 @@
 <section class="speaker-header">
     <div class="jumbotron speaker-jumbotron">
         <h1>Ils nous <span class="red">soutiennent</span> !</h1>
-        <p>Si vous pensez que les valeurs de votre organisation sont en phase avec celles qui nous animent, et que vous souhaitez devenir partenaire de cette édition (ou des prochaines !), n’hésitez pas à nous contacter.</p>
+        <p>
+            Si vous pensez que les valeurs de votre organisation sont en phase avec celles qui nous animent,
+            et que vous souhaitez devenir partenaire de cette édition (ou des prochaines), n’hésitez pas à
+            nous <a href="mailto:tedxuniversitedebordeaux@gmail.com" >contacter</a> !
+        </p>
     </div>
 </section><!-- simple -->
 <section class="speaker">
