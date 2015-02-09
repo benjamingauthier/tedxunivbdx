@@ -196,7 +196,7 @@ a {
     transition: color 0.15s linear;
 }
 a:hover {
-    color: #1e85a7;
+    color : rgba(230,43,30,1);
 }
 .error {
     color: #FF0000 !important;
@@ -302,7 +302,7 @@ footer {
 }
 footer .logo {
     float: left;
-    margin: 0 65px 0 0;
+    margin: 0 50px 0 0;
 }
 footer .logo img {
     display: block;
@@ -348,17 +348,20 @@ footer .logo img {
     margin: 8px 0;
 }
 .copy a {
-    color: #3db39e;
+    color : rgba(230,43,30,1);
     font-weight: bold;
 }
 .copy a:hover {
-    color: #318f7e;
+    color : rgb(230, 69, 31);
 }
 
+.test {
+    display: inline-flex;
+}
 
 /* sidebar -------------------------- */
 .sidebar {
-    
+
 }
 
 
@@ -561,6 +564,7 @@ footer .logo img {
     text-align: left;
     padding: 107px 0 33px;
     color: rgb(196, 196, 196);
+    background-position: 50% 40%;
 }
 .subscribe-title {
     text-align: left;
@@ -609,6 +613,10 @@ footer .logo img {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.warning {
+    background: rgb(237, 159, 53);
+}
 .subscribe-note {
     padding-bottom: 15px;
     font-size: 20px;
@@ -626,7 +634,7 @@ footer .logo img {
 
 .menu-elem {
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 9px;
     display: inline;
 }
 
@@ -635,18 +643,6 @@ footer .logo img {
     color : rgba(230,43,30,1);
 }
 
-.stat {
-    background: url(images/universite_bw.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    color: #ffffff;
-    text-align: left;
-    padding: 107px 0 33px;
-    color: rgb(196, 196, 196);
-}
 .stat-title {
     text-align: left;
     color: white;
@@ -662,6 +658,14 @@ footer .logo img {
     clear: both;
 }
 
+.stat-text {
+    text-align: center;
+    font-size: 45px;
+}
+
+.stat-wrap {
+    max-width: 1200px;
+}
 .speaker {
     text-align: center;
     padding: 20px 0 95px;
@@ -672,13 +676,20 @@ footer .logo img {
 }
 
 .speaker-img {
-    width: 250px;
-    height: 250px;
+    width: 50%;
 }
 
 .speaker-header {
     text-align: center;
     padding: 20px 0 20px;
+}
+
+img.img-thumbnail.speaker-img.img-center.partners-img.flipthis-highlight{
+    width: 50%;
+}
+.jumbotron.speaker-jumbotron {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .red {
@@ -689,6 +700,158 @@ footer .logo img {
     background-color: white;
 }
 
+.team-img {
+    width: 150px;
+    height: 150px;
+}
+
+.team-descri {
+    height: 270px;
+}
+
+.partners {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.partners-descri {
+    vertical-align: middle;
+    height: 150px;
+}
+
+.partners-img {
+    width: 50%;
+}
+
+.frame {
+    height: 250px;      /* equals max image height */
+    width: 1600px;
+    white-space: nowrap;
+
+    text-align: center; margin: 1em 0;
+}
+.partners-frame {
+     height: 170px;      /* equals max image height */
+     width: 1600px;
+     white-space: nowrap;
+
+     text-align: center; margin: 1em 0;
+ }
+
+.speakers-frame {
+    height: 200px;      /* equals max image height */
+    width: 1600px;
+    white-space: nowrap;
+
+    text-align: center; margin: 1em 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.img-center {
+    vertical-align: middle;
+    max-height: 250px;
+    max-width: 1600px;
+}
+
+.row {
+    display: table;
+}
+
+.conf {
+    background: url(images/amphitheatre.png) no-repeat;
+    -webkit-background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    text-align: left;
+    padding: 107px 0 200px;
+    color: rgb(196, 196, 196);
+    background-position: 30% 60%;
+}
+
+.conf-title {
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 36px;
+}
+
+.home-text {
+    font-size: 20px;
+    text-align: justify;
+}
+.justify {
+    text-align: justify
+}
+
+.home {
+    padding-top: 45px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.stat {
+    background: url(images/stars.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    text-align: left;
+    padding: 107px 0 200px;
+    color: rgb(196, 196, 196);
+}
+
+.footer-text {
+    text-align: center;
+    line-height: 16px;
+}
+
+.contact {
+    background: url(images/bordeaux_bw_fonce.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    text-align: left;
+    padding: 107px 0 250px;
+    color: rgb(196, 196, 196);
+    background-position: 50% 40%;
+}
+
+.contact-info {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section {
+    padding-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#ampoule {
+    height: 70%;
+    width: 70%;
+}
+
+#haut_carre {
+    height: 90%;
+    width: 90%;
+}
 /* Responsive -------------------------- */
 @media (max-width: 959px){
     .promo .wrap {
@@ -794,7 +957,7 @@ footer .logo img {
     }
     .subscribe-email {
         width: 200px;
-    }   
+    }
 }
 @media (max-width: 479px){
     body {
@@ -815,7 +978,7 @@ footer .logo img {
 }
 
 /* Retina -------------------------- */
-@media only screen and (-webkit-min-device-pixel-ratio:2), 
+@media only screen and (-webkit-min-device-pixel-ratio:2),
 only screen and (min--moz-device-pixel-ratio:2),
 only screen and (-o-min-device-pixel-ratio:2/1),
 only screen and (min-device-pixel-ratio:2),
