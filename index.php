@@ -2,7 +2,7 @@
 <?php include('register_form.php'); ?>
         <section class="subscribe">
             <div class="wrap">
-                <div class="subscribe-title">Ideas Worth Spreading</div>
+                <div class="subscribe-title">Save the date : <span class="red bold">21 mars 2015</span></div>
                 <div class="subscribe-note">Le TEDx de l'Université de Bordeaux arrive ! Inscrivez vous à notre newsletter pour rester informé.</div>
                 <div class="subscribe-form clearfix">
                     <form class="form-horizontal" role="form" action="register_form.php" id="subscribeForm" method="POST">
@@ -48,7 +48,7 @@
         <section class="stat">
             <div class="wrap stat-wrap">
                 <div class="stat-text">
-                    <p><span class="red">1</span> thème <span class="red">10</span> sujets <span class="red">10</span> speakers <span class="red">100</span> personnes</p>
+                    <p><span class="red">1</span> thème <span class="red">12</span> sujets <span class="red">12</span> speakers <span class="red">100</span> personnes</p>
                 </div>
             </div><!-- wrap -->
         </section><!-- subscribe -->

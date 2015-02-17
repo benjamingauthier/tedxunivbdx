@@ -23,6 +23,8 @@
 <script src="js/library.js"></script>
 <script src="js/script.js"></script>
 <script src="js/retina.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
     function IsEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})+$/;

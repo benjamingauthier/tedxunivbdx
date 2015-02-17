@@ -14,20 +14,32 @@
 <body class="no-js">
 <?php include('connectbdd.php'); ?>
 <section class="main">
-    <header role="banner">
-        <div class="wrap">
-            <div class="logo">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a href="/">
                     <img src="images/TEDxUB.png" width="262" height="52" alt="TEDx Université de Bordeaux">
                 </a>
-            </div><!-- logo -->
-            <div class="menu">
-                <ul class="">
-                    <li class="menu-elem">La <a href="./conference">conférence</a></li>
-                    <li class="menu-elem">L'<a href="./team">équipe</a></li>
-                    <li class="menu-elem">Les <a href="./speaker">speakers</a></li>
-                    <li class="menu-elem">Les <a href="./partenaires">partenaires</a></li>
+            </div>
+
+            <div class="navbar-collapse collapse flipthis-highlight">
+                <ul class="nav navbar-nav menu-title">
+                    <li class="menu-elem"><a href="./conference"><span class="article black">La</span> <span class="red">conférence</span></a></li>
+                    <li class="menu-elem"><a href="./team"><span class="article black">L'</span> <span class="red">équipe</span></a></li>
+                    <li class="menu-elem"><a href="./speaker"><span class="article black">Les</span> <span class="red">speakers</span></a></li>
+                    <li class="menu-elem"><a href="./partenaires"><span class="article black">Les</span> <span class="red">partenaires</span></a></li>
                 </ul>
-            </div><!--social -->
-        </div><!-- wrap -->
-    </header>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
