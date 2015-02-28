@@ -1,8 +1,8 @@
 <?php include('header.php'); ?>
     <section class="speaker-header">
         <div class="jumbotron speaker-jumbotron">
-            <h1>12 <span class="red">speakers</span>, pour une mise en lumière</h1>
-            <p>Cette année, ce sont dix speakers qui nous font l'honneur de participer à cette première édition du TEDx Université de Bordeaux. Ils apporteront chacun leur expertise sur le thème de cette édition : Lumières 2.0. Scientifique, entrepreneur, professeur ou passionné, découvrez le parcours de chacun.</p>
+            <h1>13 <span class="red">speakers</span>, pour une mise en lumière</h1>
+            <p>Cette année, ce sont treize speakers qui nous font l'honneur de participer à cette première édition du TEDx Université de Bordeaux. Ils apporteront chacun leur expertise sur le thème de cette édition : Lumières 2.0. Scientifique, entrepreneur, professeur ou passionné, découvrez le parcours de chacun.</p>
         </div>
     </section><!-- simple -->
     <section class="speaker">
