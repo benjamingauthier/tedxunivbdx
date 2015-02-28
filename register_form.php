@@ -5,35 +5,46 @@ function isEmail($email) {
 }
 
 if($_POST) {
-    $subscriber_email = ($_POST['email']);
 
-    if(!isEmail($subscriber_email)) {
-        $array = array();
-        $array['valid'] = 0;
-        $array['message'] = 'Votre adresse email n\'est pas valide. Veuillez réessayer.';
-        echo json_encode($array);
+    $firstname = ($_POST['firstname']);
+    $lastname = ($_POST['lastname']);
+    $email = ($_POST['address']);
+    $nb_place = ($_POST['nb-place']);
+    $etu = ($_POST['etu']);
+    if($etu == 1)
+    {
+        $num_etu = ($_POST['num']);
+    }
+    else
+    {
+        $num_etu = 0;
+    }
+
+    if(!isEmail($email) || !checkdnsrr(array_pop(explode("@",$email)),"MX")) {
+        header("HTTP/1.1 404 Not Found");
     }
     else {
-        $dns = 'mysql:host=mysql.pl-vm39.siteinternet.local;dbname=tedxunivbdx';
-        $utilisateur = 'tedxunivbdx';
-        $motDePasse = 'SQL_ukS33M-l!s';
-        $dbh = new PDO( $dns, $utilisateur, $motDePasse );
+
+
+       /* $dns = 'mysql:host=lasttram.fr.mysql;dbname=lasttram_fr';
+        $utilisateur = 'lasttram_fr';
+        $motDePasse = 'n54wWwZ7';
+        $dbh = new PDO( $dns, $utilisateur, $motDePasse );*/
+        $dbh = new PDO('mysql:host=mysql.pl-vm39.siteinternet.local;dbname=tedxunivbdx', "tedxunivbdx", "SQL_ukS33M-l!s");
         try
         {
-            $stmt = $dbh->prepare("INSERT INTO subscribers (email) VALUES (:email)");
-            $stmt->bindValue(':email', $subscriber_email);
+            $stmt = $dbh->prepare("INSERT INTO inscriptions (firstname, lastname, email, nb_place, num_etu) VALUES (:firstname, :lastname, :email, :nb_place, :num_etu)");
+            $stmt->bindValue(':firstname', $firstname);
+            $stmt->bindValue(':lastname', $lastname);
+            $stmt->bindValue(':email', $email);
+            $stmt->bindValue(':nb_place', $nb_place);
+            $stmt->bindValue(':num_etu', $num_etu);
+
             $stmt->execute();
-            $array = array();
-            $array['valid'] = 1;
-            $array['message'] = 'Merci beaucoup :)';
-            echo json_encode($array);
         }
         catch (PDOException $ex)
         {
-            $array = array();
-            $array['valid'] = 0;
-            $array['message'] = 'Erreur BDD. Une adresse identique existe déjà';
-            echo json_encode($array);
+            header("HTTP/1.1 404 Not Found");
         }
 
     }

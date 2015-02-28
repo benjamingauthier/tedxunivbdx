@@ -20,11 +20,22 @@
 </footer>
 </section><!-- main -->
 <script src="js/jquery.js"></script>
+<script src="js/html5.js"></script>
 <script src="js/library.js"></script>
 <script src="js/script.js"></script>
 <script src="js/retina.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    function activer() {
+        document.forms[0].num.disabled=false;
+    }
+
+    function desactiver() {
+        document.forms[0].num.disabled=true;
+        document.forms[0].num.value="";
+    }
+</script>
 <script type="text/javascript">
     function IsEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,6})+$/;

@@ -871,6 +871,46 @@ img.img-thumbnail.speaker-img.img-center.partners-img.flipthis-highlight{
     margin-top: 10px;
 }
 
+.place {
+    background-color: #ecf0f1;
+    color: #000000;
+}
+
+.place-button {
+    background-color: rgba(230,43,30,1);
+    color: #ffffff;
+}
+
+.place-note {
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+    clear: both;
+    color: #000000;
+}
+
+.nb-place {
+    width: 260px;
+}
+
+.num-etu {
+    width: 290px;
+}
+
+#choix-place {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.label-place {
+    font-size: 1.4em;
+}
+
+input[type="text"]:disabled {
+    background: #dddddd;
+}
+
 #ampoule {
     height: 70%;
     width: 70%;
