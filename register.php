@@ -2,9 +2,9 @@
         <section class="simple place">
             <div class="wrap">
                 <div class="row">
-                    <div class="col-md-8 nopadding">
+                    <div class="col-md-7 nopadding">
                         <div class="subscribe-title red">Je réserve ma place !</div>
-                               <div class="place-note">Afin de participer au tirage au sort pour obtenir une place pour assister à l'évènement, merci de remplir ce formulaire !</div>
+                               <div class="place-note">Parce qu'un TEDx est un moment d'exception, 100 places seulement sont mises en vente pour assister au premier TEDxUniversitéDeBordeaux.<br>Un tirage au sort sera effectué si nous avons plus de 100 inscrits.<br>Pour vous inscrire, il vous suffit de remplir le formulaire ci-dessous, vous avez jusqu'au 8 mars à minuit !</div>
                         <div class="subscribe-form clearfix">
                     </div>
                         <form class="form-horizontal" role="form" action="register_form.php" id="subscribeForm" method="POST">
@@ -15,7 +15,7 @@
                                     <input type="email" id="address" placeholder="Votre email" data-validate="validate(required, email)" required="required" name="address" class="subscribe-email"><br><br><br>
                                     <div id="choix-place">
                                         <div id="nb-place"><br>
-                                            <label for="place" class="label-place">Nombre de place :        </label><br>
+                                            <label for="place" class="label-place">Nombre de places :        </label><br>
                                             <input id="nb-place" type="radio" name="nb-place" value="1" checked required class="">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;
                                             <input id="nb-place" type="radio" name="nb-place" value="2" class="">&nbsp;&nbsp;&nbsp;2
                                         </div><br>
@@ -31,6 +31,12 @@
                             </div>
                         </form>
                     </div><!-- subscribe-form -->
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <div class="subscribe-title red">Informations pratiques</div>
+                        <div class="place-note">Planning de la journée :<br>14h-19h : Talks des intervenants<br>19h30-23h00 : Buffet et échanges conviviaux<br><br>
+                                                Prix des places :<br>Etudiant : 15€<br>Non-Etudiant : 30€<br><br>Le prix de la place inclut l'accès à l'après-midi de conférences, la pause-goûter et le buffet du soir !</div>
+                    </div>
                 </div>
             </div><!-- wrap -->
         </section><!-- subscribe -->
