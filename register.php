@@ -34,7 +34,7 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-4">
                         <div class="subscribe-title red">Informations pratiques</div>
-                        <div class="place-note">Planning de la journée :<br>14h-19h : Talks des intervenants<br>19h30-23h00 : Buffet et échanges conviviaux<br><br>
+                        <div class="place-note">Planning de la journée du 21 mars 2015 :<br>14h-19h : Talks des intervenants<br>19h30-23h00 : Buffet et échanges conviviaux<br><br>
                                                 Prix des places :<br>Etudiant : 15€<br>Non-Etudiant : 30€<br><br>Le prix de la place inclut l'accès à l'après-midi de conférences, la pause-goûter et le buffet du soir !</div>
                     </div>
                 </div>
