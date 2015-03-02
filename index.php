@@ -1,20 +1,11 @@
 <?php include('header.php'); ?>
 <?php include('register_form.php'); ?>
-        <section class="subscribe">
+    <section class="subscribe" xmlns="http://www.w3.org/1999/html">
             <div class="wrap">
                 <div class="subscribe-title">Save the date : <span class="red bold">21 mars 2015</span></div>
-                <div class="subscribe-note">Le TEDx de l'Université de Bordeaux arrive ! Inscrivez vous à notre newsletter pour rester informé.</div>
+                <div class="subscribe-note">Le TEDx de l'Université de Bordeaux arrive !</div>
                 <div class="subscribe-form clearfix">
-                    <form class="form-horizontal" role="form" action="register_form.php" id="subscribeForm" method="POST">
-                        <div class="form-group" >
-                            <div class="" id="divEmail">
-                                <p id="errorMessage" style="color:red;" class="help-block text-danger"></p>
-                                <input type="email" id="address" placeholder="Votre email" data-validate="validate(required, email)" required="required" name="email" class="subscribe-email">
-
-                                <button id="submitButton" type="submit" class="subscribe-button">Valider</button>
-                            </div>
-                        </div>
-                    </form>
+                    <a href="./inscription"><input type="button" class="register-button" value="Inscrivez-vous"></a>
                 </div><!-- subscribe-form -->
             </div><!-- wrap -->
         </section><!-- subscribe -->
