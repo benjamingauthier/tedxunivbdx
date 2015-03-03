@@ -21,7 +21,7 @@
                 </div>
                 <?php $i = $i+1; ?>
             <?php endforeach ?>
-            <br><br><br> <h3>Rendez-vous le <span class="red">21 Février</span> pour découvrir le prochain speaker !</h3>
+            <br><br><br> <h3>Rendez vous le <span class="red">21 mars</span> pour découvrir l'ensemble des speakers !</h3>
         </div><!-- wrap -->
     </section><!-- simple -->
 <?php include('footer.php'); ?>

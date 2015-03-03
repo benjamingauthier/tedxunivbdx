@@ -890,6 +890,10 @@ img.img-thumbnail.speaker-img.img-center.partners-img.flipthis-highlight{
     color: #000000;
 }
 
+p#champ_cache {
+    margin: 0;
+}
+
 .nb-place {
     width: 260px;
 }
@@ -909,6 +913,10 @@ img.img-thumbnail.speaker-img.img-center.partners-img.flipthis-highlight{
 
 input[type="text"]:disabled {
     background: #dddddd;
+}
+
+.stati {
+    text-align: left;
 }
 
 #ampoule {
