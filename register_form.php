@@ -13,13 +13,13 @@ if($_POST) {
     $etu = ($_POST['etu']);
     if($etu == 1)
     {
-        $num_etu = ($_POST['num']);
+        $num_etu2 = ($_POST['num2']);
         if($nb_place == 2 )
         {
-            $num_etu2 = ($_POST['num2']);
+            $num_etu = ($_POST['num']);
         }
         else {
-            $num_etu2 = 0;
+            $num_etu = 0;
         }
     }
     else

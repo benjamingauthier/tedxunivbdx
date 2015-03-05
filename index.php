@@ -39,7 +39,7 @@
         <section class="stat">
             <div class="wrap stat-wrap">
                 <div class="stat-text">
-                    <p><span class="red">1</span> thème <span class="red">12</span> sujets <span class="red">12</span> speakers <span class="red">100</span> personnes</p>
+                    <p><span class="red">1</span> thème <span class="red">12</span> sujets <span class="red">13</span> speakers <span class="red">100</span> personnes</p>
                 </div>
             </div><!-- wrap -->
         </section><!-- subscribe -->

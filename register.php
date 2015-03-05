@@ -26,7 +26,7 @@
                                     </div><br>
                                 </div>
                                 <p id="champ_cache">
-                                    <input type="text" id="num" placeholder="Numéro Étudiant" required="required" name="num" class="subscribe-email" disabled="true"><br><br><br>
+                                    <input type="text" id="num" placeholder="Numéro Étudiant" name="num" class="subscribe-email" disabled="true"><br><br><br>
                                 </p>
                                 <input type="text" id="num2" placeholder="Numéro Étudiant" required="required" name="num2" class="subscribe-email" disabled="true"><br><br><br><br><br>
                                 <button id="submitButton" type="submit"  class="btn place-button btn-lg btn-block">Je réserve</button>
@@ -60,6 +60,7 @@
         function activer() {
             document.getElementById("num").disabled=false;
             document.getElementById("num2").disabled=false;
+            document.getElementById("num").attributes["required"] = "required";
         }
 
         function desactiver() {
@@ -67,6 +68,7 @@
             document.getElementById("num2").disabled=true;
             document.getElementById("num").value="";
             document.getElementById("num2").value="";
+            document.getElementById("num").attributes["required"] = "";
         }
     </script>
 <?php include ('footer.php'); ?>

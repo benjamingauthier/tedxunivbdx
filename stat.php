@@ -12,8 +12,11 @@
                     <div class="col-md-8 stati">
                         <h2 class="speaker-title"><?php echo $subscriber['firstname'].' '.$subscriber['lastname'] ?></h2>
                         <p class="speaker-descri"><?php echo 'Email :  '.$subscriber['email'].' Nombre de place : '.$subscriber['nb_place']?></p>
-                        <?php if($subscriber['num_etu'] != 0) : ?>
-                            <p class="speaker-descri"><?php echo 'Etudiant, numéro : '.$subscriber['num_etu']?></p>
+                        <?php if($subscriber['num_etu2'] != 0) : ?>
+                            <p class="speaker-descri"><?php echo 'Etudiant, numéro : '.$subscriber['num_etu2']?></p>
+                            <?php if($subscriber['num_etu'] != 0) : ?>
+                                <p class="speaker-descri"><?php echo 'Etudiant, numéro : '.$subscriber['num_etu']?></p>
+                            <? endif ?>
                         <?php else : ?>
                             <p class="speaker-descri"><?php echo 'Non étudiant' ?></p>
                         <? endif ?>
