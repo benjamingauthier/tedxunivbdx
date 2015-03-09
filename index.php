@@ -4,9 +4,7 @@
             <div class="wrap">
                 <div class="subscribe-title">Save the date : <span class="red bold">21 mars 2015</span></div>
                 <div class="subscribe-note">Le TEDx de l'Université de Bordeaux arrive !</div>
-                <div class="subscribe-form clearfix">
-                    <a href="./inscription"><input type="button" class="register-button" value="Inscrivez-vous"></a>
-                </div><!-- subscribe-form -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Arg2th7Gvrg" frameborder="0" allowfullscreen></iframe>
             </div><!-- wrap -->
         </section><!-- subscribe -->
         <section class="simple home">

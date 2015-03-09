@@ -370,6 +370,9 @@ footer .logo img {
     text-align: center;
     padding: 107px 0 95px;
 }
+.video {
+    text-align: center;
+}
 .simple p {
     margin: 0 60px 16px;
 }
@@ -561,7 +564,7 @@ footer .logo img {
     background-size: cover;
     text-align: center;
     color: #ffffff;
-    text-align: left;
+    /*text-align: left;*/
     padding: 107px 0 33px;
     color: rgb(196, 196, 196);
     background-position: 50% 40%;
