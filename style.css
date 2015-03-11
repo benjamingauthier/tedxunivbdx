@@ -951,6 +951,20 @@ input[type="text"]:disabled {
     height: 90%;
     width: 90%;
 }
+
+.paiement {
+    text-align: center;
+    padding: 50px 0 0;
+    background-color: #ecf0f1;
+}
+
+.paiement-header {
+    text-align: center;
+}
+
+.paiement-descri {
+    padding-left: 20px;
+}
 /* Responsive -------------------------- */
 @media (max-width: 959px){
     .promo .wrap {
