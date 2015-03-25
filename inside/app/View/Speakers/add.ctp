@@ -6,7 +6,7 @@
 		echo $this->Form->input('firstname');
 		echo $this->Form->input('lastname');
 		echo $this->Form->input('qualification');
-		echo $this->Form->input('description');
+		echo $this->Form->textarea('description');
 		echo $this->Form->input('picture');
 	?>
 	</fieldset>

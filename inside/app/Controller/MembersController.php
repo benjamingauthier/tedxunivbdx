@@ -102,9 +102,9 @@ class MembersController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Member->delete()) {
-			$this->Session->setFlash(__('The member has been deleted.'));
+			$this->Session->setFlash(__('The member has been deleted.'), 'flash_success');
 		} else {
-			$this->Session->setFlash(__('The member could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The member could not be deleted. Please, try again.'), 'flash_fail');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
