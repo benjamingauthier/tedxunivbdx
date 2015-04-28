@@ -49,10 +49,10 @@ class SpeakersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Speaker->create();
 			if ($this->Speaker->save($this->request->data)) {
-				$this->Session->setFlash(__('The speaker has been saved.'));
+				$this->Session->setFlash(__('The speaker has been saved.'), 'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The speaker could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The speaker could not be saved. Please, try again.'), 'flash_fail');
 			}
 		}
 	}
@@ -70,10 +70,10 @@ class SpeakersController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Speaker->save($this->request->data)) {
-				$this->Session->setFlash(__('The speaker has been saved.'));
+				$this->Session->setFlash(__('The speaker has been saved.'), 'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The speaker could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The speaker could not be saved. Please, try again.'), 'flash_fail');
 			}
 		} else {
 			$options = array('conditions' => array('Speaker.' . $this->Speaker->primaryKey => $id));
@@ -95,9 +95,9 @@ class SpeakersController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Speaker->delete()) {
-			$this->Session->setFlash(__('The speaker has been deleted.'));
+			$this->Session->setFlash(__('The speaker has been deleted.'), 'flash_success');
 		} else {
-			$this->Session->setFlash(__('The speaker could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The speaker could not be deleted. Please, try again.'), 'flash_fail');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

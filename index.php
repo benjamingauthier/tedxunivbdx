@@ -2,8 +2,7 @@
 <?php include('register_form.php'); ?>
     <section class="subscribe" xmlns="http://www.w3.org/1999/html">
             <div class="wrap">
-                <div class="subscribe-title">Save the date : <span class="red bold">21 mars 2015</span></div>
-                <div class="subscribe-note">Le TEDx de l'Université de Bordeaux arrive !</div>
+                <div class="subscribe-title"><span class="red bold">Merci à tous ! Les vidéos seront en ligne très prochainement.</span></div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Arg2th7Gvrg" frameborder="0" allowfullscreen></iframe>
             </div><!-- wrap -->
         </section><!-- subscribe -->
@@ -37,7 +36,7 @@
         <section class="stat">
             <div class="wrap stat-wrap">
                 <div class="stat-text">
-                    <p><span class="red">1</span> thème <span class="red">12</span> sujets <span class="red">13</span> speakers <span class="red">100</span> personnes</p>
+                    <p><span class="red">1</span> thème <span class="red">10</span> sujets <span class="red">11</span> speakers <span class="red">100</span> personnes</p>
                 </div>
             </div><!-- wrap -->
         </section><!-- subscribe -->
