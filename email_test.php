@@ -20,7 +20,7 @@ $codehtml=
 
     Si vous n'êtes pas tiré au sort, rassurez-vous: des lieux-relais sont mis en place afin que vous puissiez suivre l'événement en direct. Plus d'informations à ce sujet très prochainement ! <br>
     <br><br>
-    L'équipe du TEDxUniversitéDeBordeaux.
+    L'équipe <a href='https://standio.fr/''>STANDiO</a>.
 
 </body>
 </html>";
